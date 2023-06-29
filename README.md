@@ -19,6 +19,9 @@ Next step would be to use KimiaNet to extract features from each patch in the mo
 ```python
 python feature_extraction.py --patch_dir './PATCHES/' --extracted_features_save_adr './extracted_features.pickle' --batch_size 256
 ```
+This will save the extracted features to `extracted_features.pickle`.
+
+For the slides in the test set, you should follow the same two steps to calculate and save `extracted_test_features.pickle`. The rest of the process can be followed in "search.ipynb" notebook.
 
 
 ## RetCCL
