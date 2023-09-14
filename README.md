@@ -23,13 +23,28 @@ This will save the extracted features to `extracted_features.pickle`.
 
 For the slides in the test set, you should follow the same two steps to calculate and save `extracted_test_features.pickle`. The rest of the process can be followed in `search.ipynb` notebook.
 
-
 ## RetCCL
 
-```python
-python feature_extraction.py --batch_size 256
+The first step here is to create patches. The authors have used to same patching pipeline as SISH. Hence, the data should be stored in the following format:
+```bash
+DATA
+└── WSI
+    ├── SITE
+    │   ├── DIAGNOSIS
+    │   │   ├── RESOLUTION
+    │   │   │   ├── slide_1
+    │   │   │   ├── slide_2
+    │   │   │   ├── slide_3
 ```
-
+Then, for `20x` resolution slides you can run the following command. Make sure that all your presets for segmentation and patching are stored in a `.csv` file inside the `presets` directory.
+```python
+python create_patches_fp.py --source ./DATA/WSI/[[SITE]/[DIAGNOSIS]/20x/ --step_size 1024 --patch_size 1024 --patch_level 0 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/20x --preset tcga.csv
+```
+And for `40x` resolution slides you can run: 
+```python
+python create_patches_fp.py --source ./DATA/WSI/[[SITE]/[DIAGNOSIS]/40x/ --step_size 512 --patch_size 512 --patch_level 1 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/40x --preset tcga.csv
+```
+Once the patches are created, you have to extract features for each patch before generating the mosaics. To do so, you have to create a dataframe `.csv` file with the following columns: 
 ```python
 python parallel_patching.py --metadata_path ./sampled_metadata_okay.csv --num_processes 16
 ```
