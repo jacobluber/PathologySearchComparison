@@ -44,7 +44,7 @@ And for `40x` resolution slides you can run:
 ```python
 python create_patches_fp.py --source ./DATA/WSI/[[SITE]/[DIAGNOSIS]/40x/ --step_size 512 --patch_size 512 --patch_level 1 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/40x --preset tcga.csv
 ```
-Once the patches are created, you have to extract features for each patch before generating the mosaics. To do so, you have to create a dataframe `.csv` file with the following columns: 
+Once the patches are created, you have to extract features for each patch before generating the mosaics. To do so, you have to create a dataframe called `patch_dataframe.csv` file with the following columns: `file_id`, `file_name`, `slide_path`, `patch_level`, `patch_size`, `coord1`, and `coord2`.
 ```python
-python parallel_patching.py --metadata_path ./sampled_metadata_okay.csv --num_processes 16
+python extract_features.py
 ```
