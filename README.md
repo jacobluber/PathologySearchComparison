@@ -2,7 +2,7 @@
 In order to run each of the models, you should change the working directory to the corresponding directory (e.g. `cd yottixel`).
 
 ## database
-Here, you can find two notebooks: `gdc_search.ipynb` and `sample.ipynb`. `gdc_search.ipynb` uses NCI's GDC API to retrieve all the .SVS slides in TCGA project that have a `primary_site` of rither "Breast", "Brain", "Bronchus and lung", "Colon", or "Liver and intrahepatic bile ducts". `sample.ipynb` would randomly sample 50 to 75 slides from each category to create the dataset that would be used to create the databases of each method. This sampled dataset is stored as `sampled_metadata.csv`.
+Here, you can find two notebooks: `gdc_search.ipynb` and `sample.ipynb`. `gdc_search.ipynb` uses NCI's GDC API to retrieve all the `.svs` slides in TCGA project that have a `primary_site` of rither "Breast", "Brain", "Bronchus and lung", "Colon", or "Liver and intrahepatic bile ducts". `sample.ipynb` would randomly sample 50 to 75 slides from each category to create the dataset that would be used to create the databases of each method. This sampled dataset is stored as `sampled_metadata.csv`. This `.csv` will be frequently used in all the methods, so a copy of it is present in all model directories.
 
 ## Yottixel
 First you have to generate the mosaics from database slides and test slides. To do so, you can use either `patching.py` or `parallel_patching.py`. The only difference is that the latter uses multiprocessing for a faster runtime.
