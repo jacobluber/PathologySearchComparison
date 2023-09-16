@@ -38,11 +38,11 @@ DATA
 ```
 Then, for `20x` resolution slides you can run the following command. Make sure that all your presets for segmentation and patching are stored in a `.csv` file inside the `presets` directory.
 ```python
-python create_patches_fp.py --source ./DATA/WSI/[[SITE]/[DIAGNOSIS]/20x/ --step_size 1024 --patch_size 1024 --patch_level 0 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/20x --preset tcga.csv
+python create_patches_fp.py --source ./DATA/WSI/[SITE]/[DIAGNOSIS]/20x/ --step_size 1024 --patch_size 1024 --patch_level 0 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/20x --preset tcga.csv
 ```
 And for `40x` resolution slides you can run: 
 ```python
-python create_patches_fp.py --source ./DATA/WSI/[[SITE]/[DIAGNOSIS]/40x/ --step_size 512 --patch_size 512 --patch_level 1 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/40x --preset tcga.csv
+python create_patches_fp.py --source ./DATA/WSI/[SITE]/[DIAGNOSIS]/40x/ --step_size 512 --patch_size 512 --patch_level 1 --seg --patch --stitch --save_dir ./DATA/PATCHES/[SITE]/[DIAGNOSIS]/40x --preset tcga.csv
 ```
 Once the patches are created, you have to extract features for each patch before generating the mosaics. To do so, you have to create a dataframe called `patch_dataframe.csv` file with the following columns: `file_id`, `file_name`, `slide_path`, `patch_level`, `patch_size`, `coord1`, and `coord2`.
 ```python
