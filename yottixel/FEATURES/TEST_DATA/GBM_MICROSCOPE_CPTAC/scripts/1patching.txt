@@ -1,0 +1,1 @@
+python parallel_patching.py --data_dir /raid/nejm_ai/TEST_DATA/ --metadata_path ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/test_metadata.csv --experiment GBM_MICROSCOPE_CPTAC --save_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/PATCHES --num_processes 16

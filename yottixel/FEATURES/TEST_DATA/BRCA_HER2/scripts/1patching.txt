@@ -1,0 +1,1 @@
+python parallel_patching.py --data_dir /raid/nejm_ai/TEST_DATA/ --metadata_path ./FEATURES/TEST_DATA/BRCA_HER2/test_metadata.csv --experiment BRCA_HER2 --save_dir ./FEATURES/TEST_DATA/BRCA_HER2/PATCHES --num_processes 8

@@ -1,0 +1,1 @@
+python parallel_patching.py --data_dir /raid/nejm_ai/TEST_DATA/ --metadata_path ./FEATURES/TEST_DATA/UCLA/test_metadata.csv --experiment UCLA --save_dir ./FEATURES/TEST_DATA/UCLA/PATCHES --num_processes 8

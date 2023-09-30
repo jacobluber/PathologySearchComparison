@@ -1,0 +1,1 @@
+python feature_extraction.py --patch_dir ./FEATURES/TEST_DATA/READER_STUDY/QUERY_PATCHES/ --experiment READER_STUDY --network_input_patch_width 1000 --extracted_features_save_adr ./FEATURES/TEST_DATA/READER_STUDY/query_features.pkl --batch_size 256 --use_gpu True
