@@ -1,0 +1,1 @@
+python create_patches_fp.py --source /raid/nejm_ai/TEST_DATA/BRCA_TRASTUZUMAB/ --seg --patch --stitch --save_dir ./FEATURES/TEST_DATA/BRCA_TRASTUZUMAB --preset BRCA_TRASTUZUMAB.csv

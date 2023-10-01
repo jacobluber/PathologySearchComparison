@@ -1,0 +1,3 @@
+python extract_features.py --patch_dataframe_path ./FEATURES/DATABASE/patch_dataframe.csv --save_dir ./FEATURES/DATABASE
+
+## This will generate features.h5

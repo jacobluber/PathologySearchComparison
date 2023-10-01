@@ -1,0 +1,4 @@
+python patching_post_process.py --splitted_slides_dir ./FEATURES/TEST_DATA/UCLA/patches
+
+## IMPORTANT: After running this script, you have to manually delete slide2_0.h5, ..., slide2_3.h5
+## Optionally, you can also delete slide2_0.tif, ..., slide2_3.tif to save space.
