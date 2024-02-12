@@ -1,9 +1,9 @@
 # Pathology Search Comparison
-
 This pipeline is comprised of three main steps:
 1. Downloading and storing database and test datasets.
 2. Running each of the four models' to create model specific database and generating results.
 3. Post-Hoc analysis of the results.
+
 To reproduce our results, you can follow the guidelines presented here. Also, please feel free to use our pipeline to test these models on you custom database and test datasets.
 ## Downloading Data
 We have provided dtailed guidelines on how to download the TCGA slides we used as a common database, and test slides we used for different studies in the `data` subdirectory of this repository. Please refer to `data/README.md` for detailed explanation.
@@ -13,6 +13,7 @@ For each of the four methods we compared in this study, we have provided the sou
 2. `sish`
 3. `retccl`
 4. `hshr`
+
 Inside each one of these subdirectories, you can find a detailed explanation on how to run these models in their corresponding `README.md` file.
 ## Post-Hoc Analysis
 The final aggregation and analysis of the results is performed using scripts provided here in the `analysis` subdirectory. A brief explanation of how to run these scritps is provided in `analysis/README.md`.
