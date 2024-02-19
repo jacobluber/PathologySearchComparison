@@ -1,3 +1,0 @@
-python extract_features.py --patch_dataframe_path ./FEATURES/TEST_DATA/BRCA_TRASTUZUMAB/patch_dataframe.csv --save_dir ./FEATURES/TEST_DATA/BRCA_TRASTUZUMAB
-
-## This will generate features.h5

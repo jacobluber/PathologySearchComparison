@@ -1,1 +1,0 @@
-python all_patches_visualization.py --slides_dir /raid/nejm_ai/TEST_DATA/UCLA --patches_dir ./FEATURES/TEST_DATA/UCLA/patches --save_dir ./FEATURES/TEST_DATA/UCLA/visualized_patches

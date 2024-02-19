@@ -1,3 +1,0 @@
-python generate_mosaics.py --features_path ./FEATURES/TEST_DATA/BRCA_HER2/features.h5 --save_dir ./FEATURES/TEST_DATA/BRCA_HER2 --kl 9 --R 0.2
-
-## This will generate features_with_cluster.h5 and mosaics.h5

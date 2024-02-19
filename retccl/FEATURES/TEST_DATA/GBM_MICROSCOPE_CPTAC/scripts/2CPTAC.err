@@ -1,23 +1,0 @@
-  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [01:41<10:06, 101.03s/it] 29%|██▊       | 2/7 [03:13<07:58, 95.72s/it]  43%|████▎     | 3/7 [04:32<05:52, 88.23s/it] 57%|█████▋    | 4/7 [05:57<04:20, 86.96s/it] 71%|███████▏  | 5/7 [07:22<02:52, 86.41s/it] 86%|████████▌ | 6/7 [08:52<01:27, 87.46s/it]100%|██████████| 7/7 [09:53<00:00, 78.89s/it]100%|██████████| 7/7 [09:53<00:00, 84.79s/it]
-/home/mxn2498/projects/new_search_comp/retccl/extract_features.py:82: PerformanceWarning: 
-your performance may suffer as PyTables will pickle object types that it cannot
-map directly to c-types [inferred_type->mixed,key->block1_values] [items->Index(['file_id', 'file_name', 'slide_path', 'features'], dtype='object')]
-
-  patch_dataframe.to_hdf(join(save_dir, "features.h5"), key="df", mode="w")
-  0%|          | 0/1 [00:00<?, ?it/s]/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:55: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  mosaic = pd.concat([mosaic, cluster_patches.iloc[sidx:sidx+1]], ignore_index=True)
-/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:64: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  mosaics = pd.concat([mosaics, mosaic], ignore_index=True)
-100%|██████████| 1/1 [00:07<00:00,  7.69s/it]100%|██████████| 1/1 [00:07<00:00,  7.69s/it]
-/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:66: PerformanceWarning: 
-your performance may suffer as PyTables will pickle object types that it cannot
-map directly to c-types [inferred_type->mixed-integer,key->block1_values] [items->Index(['file_name', 'slide_path', 'patch_level', 'patch_size', 'coord1',
-       'coord2', 'features'],
-      dtype='object')]
-
-  mosaics.to_hdf(join(save_dir, "mosaics.h5"), key="df", mode="w")
-/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:67: PerformanceWarning: 
-your performance may suffer as PyTables will pickle object types that it cannot
-map directly to c-types [inferred_type->mixed,key->block2_values] [items->Index(['file_name', 'slide_path', 'features'], dtype='object')]
-
-  features_df.to_hdf(join(save_dir, "features_with_cluster.h5"), key="df", mode="w")

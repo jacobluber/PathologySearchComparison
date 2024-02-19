@@ -1,1 +1,0 @@
-python feature_extraction.py --patch_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/PATCHES/ --experiment GBM_MICROSCOPE_CPTAC --network_input_patch_width 1000 --extracted_features_save_adr ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/features.pkl --batch_size 256 --use_gpu True

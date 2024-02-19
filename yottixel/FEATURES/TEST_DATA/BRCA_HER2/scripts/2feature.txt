@@ -1,1 +1,0 @@
-python feature_extraction.py --patch_dir ./FEATURES/TEST_DATA/BRCA_HER2/PATCHES/ --experiment BRCA_HER2 --network_input_patch_width 1000 --extracted_features_save_adr ./FEATURES/TEST_DATA/BRCA_HER2/features.pkl --batch_size 256 --use_gpu True

@@ -1,1 +1,0 @@
-python all_patches_visualization.py --slides_dir /raid/nejm_ai/TEST_DATA/BRCA_HER2 --patches_dir ./FEATURES/TEST_DATA/BRCA_HER2/patches --save_dir ./FEATURES/TEST_DATA/BRCA_HER2/visualized_patches --slide_extension svs

@@ -1,0 +1,15 @@
+[download]
+dir = /home/mxn2498/projects/PathologySearchComparison/DATA/DATABASE
+save_interval = 1073741824
+http_chunk_size = 1048576
+no_segment_md5sums = False
+no_file_md5sum = False
+no_verify = False
+no_related_files = False
+no_annotations = False
+no_auto_retry = False
+retry_amount = 3
+wait_time = 20.0
+latest = False
+server = https://api.gdc.cancer.gov
+n_processes = 4

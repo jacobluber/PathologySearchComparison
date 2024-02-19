@@ -1,1 +1,0 @@
-python create_patches_fp.py --source /raid/nejm_ai/TEST_DATA/BRCA_HER2/ --seg --patch --stitch --save_dir ./FEATURES/TEST_DATA/BRCA_HER2 --preset BRCA_HER2.csv

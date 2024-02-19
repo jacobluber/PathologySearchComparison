@@ -1,1 +1,0 @@
-python create_patches_fp.py --source /raid/nejm_ai/TEST_DATA/GBM_MICROSCOPE_UPENN/ --seg --patch --stitch --save_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_UPENN --preset GBM_MICROSCOPE_UPENN.csv
