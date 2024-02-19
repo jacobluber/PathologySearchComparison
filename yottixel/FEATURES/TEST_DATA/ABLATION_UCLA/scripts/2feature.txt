@@ -1,0 +1,1 @@
+python ablation_feature_extraction.py --patch_dir ./FEATURES/TEST_DATA/UCLA/PATCHES/ --experiment ABLATION_UCLA --network_input_patch_width 1000 --extracted_features_save_adr ./FEATURES/TEST_DATA/ABLATION_UCLA/features.pkl --batch_size 256 --use_gpu True
