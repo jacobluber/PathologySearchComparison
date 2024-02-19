@@ -1,0 +1,1 @@
+python all_patches_visualization.py --slides_dir /raid/nejm_ai/TEST_DATA/GBM_MICROSCOPE_CPTAC --patches_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/patches --save_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC/visualized_patches --slide_extension svs

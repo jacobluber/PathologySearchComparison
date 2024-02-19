@@ -1,0 +1,1 @@
+python create_patches_fp.py --source /raid/nejm_ai/TEST_DATA/GBM_MICROSCOPE_CPTAC/ --seg --patch --stitch --save_dir ./FEATURES/TEST_DATA/GBM_MICROSCOPE_CPTAC --preset GBM_MICROSCOPE_CPTAC.csv

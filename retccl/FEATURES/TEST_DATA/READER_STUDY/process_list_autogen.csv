@@ -1,0 +1,4 @@
+slide_id,process,status,seg_level,sthresh,mthresh,close,use_otsu,a_t,a_h,max_n_holes,vis_level,line_thickness,use_padding,contour_fn
+Her2Pos_Case_66.svs,0,processed,2,3,7,4,False,8,4,8,2,100,True,four_pt
+MSB-09151-01-11.svs,0,processed,2,3,7,4,False,8,4,8,2,100,True,four_pt
+MSB-09977-01-22.svs,0,processed,3,3,7,4,False,8,4,8,3,100,True,four_pt

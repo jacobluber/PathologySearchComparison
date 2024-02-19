@@ -1,0 +1,1 @@
+python create_patches_fp.py --source /raid/nejm_ai/TEST_DATA/READER_STUDY/ --seg --patch --stitch --save_dir ./FEATURES/TEST_DATA/READER_STUDY --preset READER_STUDY.csv

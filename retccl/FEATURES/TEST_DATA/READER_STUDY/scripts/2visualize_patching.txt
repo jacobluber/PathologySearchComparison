@@ -1,0 +1,1 @@
+python all_patches_visualization.py --slides_dir /raid/nejm_ai/TEST_DATA/READER_STUDY --patches_dir ./FEATURES/TEST_DATA/READER_STUDY/patches --save_dir ./FEATURES/TEST_DATA/READER_STUDY/visualized_patches --slide_extension svs

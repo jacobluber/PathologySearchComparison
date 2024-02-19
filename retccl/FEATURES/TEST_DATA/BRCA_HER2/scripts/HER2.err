@@ -1,0 +1,23 @@
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [01:31<1:15:02, 91.88s/it]  4%|▍         | 2/50 [03:06<1:14:53, 93.61s/it]  6%|▌         | 3/50 [05:17<1:26:45, 110.76s/it]  8%|▊         | 4/50 [06:37<1:15:28, 98.43s/it]  10%|█         | 5/50 [07:53<1:07:48, 90.40s/it] 12%|█▏        | 6/50 [09:05<1:01:36, 84.02s/it] 14%|█▍        | 7/50 [10:16<57:13, 79.86s/it]   16%|█▌        | 8/50 [11:36<55:54, 79.88s/it] 18%|█▊        | 9/50 [13:12<57:57, 84.82s/it] 20%|██        | 10/50 [14:33<55:45, 83.64s/it] 22%|██▏       | 11/50 [15:56<54:22, 83.66s/it] 24%|██▍       | 12/50 [17:10<51:06, 80.71s/it] 26%|██▌       | 13/50 [18:24<48:28, 78.62s/it] 28%|██▊       | 14/50 [19:48<48:07, 80.20s/it] 30%|███       | 15/50 [21:06<46:25, 79.58s/it] 32%|███▏      | 16/50 [22:24<44:47, 79.05s/it] 34%|███▍      | 17/50 [23:43<43:27, 79.01s/it] 36%|███▌      | 18/50 [25:07<42:53, 80.43s/it] 38%|███▊      | 19/50 [26:32<42:15, 81.80s/it] 40%|████      | 20/50 [28:04<42:29, 84.98s/it] 42%|████▏     | 21/50 [29:23<40:10, 83.14s/it] 44%|████▍     | 22/50 [30:49<39:12, 84.02s/it] 46%|████▌     | 23/50 [31:58<35:46, 79.48s/it] 48%|████▊     | 24/50 [33:21<34:54, 80.54s/it] 50%|█████     | 25/50 [34:42<33:36, 80.68s/it] 52%|█████▏    | 26/50 [35:59<31:48, 79.51s/it] 54%|█████▍    | 27/50 [37:17<30:18, 79.07s/it] 56%|█████▌    | 28/50 [38:33<28:45, 78.41s/it] 58%|█████▊    | 29/50 [39:49<27:09, 77.58s/it] 60%|██████    | 30/50 [41:07<25:51, 77.55s/it] 62%|██████▏   | 31/50 [42:25<24:36, 77.73s/it] 64%|██████▍   | 32/50 [44:12<25:56, 86.46s/it] 66%|██████▌   | 33/50 [45:42<24:52, 87.78s/it] 68%|██████▊   | 34/50 [46:56<22:14, 83.39s/it] 70%|███████   | 35/50 [48:10<20:12, 80.82s/it] 72%|███████▏  | 36/50 [49:27<18:33, 79.56s/it] 74%|███████▍  | 37/50 [50:49<17:25, 80.42s/it] 76%|███████▌  | 38/50 [52:15<16:22, 81.86s/it] 78%|███████▊  | 39/50 [53:33<14:49, 80.85s/it] 80%|████████  | 40/50 [54:43<12:54, 77.48s/it] 82%|████████▏ | 41/50 [56:01<11:39, 77.69s/it] 84%|████████▍ | 42/50 [57:40<11:13, 84.19s/it] 86%|████████▌ | 43/50 [59:10<10:00, 85.78s/it] 88%|████████▊ | 44/50 [1:00:32<08:29, 84.85s/it] 90%|█████████ | 45/50 [1:01:44<06:43, 80.80s/it] 92%|█████████▏| 46/50 [1:03:07<05:25, 81.46s/it] 94%|█████████▍| 47/50 [1:04:39<04:13, 84.65s/it] 96%|█████████▌| 48/50 [1:06:19<02:58, 89.20s/it] 98%|█████████▊| 49/50 [1:08:11<01:36, 96.09s/it]100%|██████████| 50/50 [1:09:51<00:00, 97.34s/it]100%|██████████| 50/50 [1:09:51<00:00, 83.83s/it]
+/home/mxn2498/projects/new_search_comp/retccl/extract_features.py:83: PerformanceWarning: 
+your performance may suffer as PyTables will pickle object types that it cannot
+map directly to c-types [inferred_type->mixed,key->block1_values] [items->Index(['file_id', 'file_name', 'slide_path', 'features'], dtype='object')]
+
+  patch_dataframe.to_hdf(join(save_dir, "features.h5"), key="df", mode="w")
+  0%|          | 0/1 [00:00<?, ?it/s]/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:55: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  mosaic = pd.concat([mosaic, cluster_patches.iloc[sidx:sidx+1]], ignore_index=True)
+/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:64: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  mosaics = pd.concat([mosaics, mosaic], ignore_index=True)
+100%|██████████| 1/1 [01:28<00:00, 88.40s/it]100%|██████████| 1/1 [01:28<00:00, 88.40s/it]
+/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:66: PerformanceWarning: 
+your performance may suffer as PyTables will pickle object types that it cannot
+map directly to c-types [inferred_type->mixed-integer,key->block1_values] [items->Index(['file_name', 'slide_path', 'patch_level', 'patch_size', 'coord1',
+       'coord2', 'features'],
+      dtype='object')]
+
+  mosaics.to_hdf(join(save_dir, "mosaics.h5"), key="df", mode="w")
+/home/mxn2498/projects/new_search_comp/retccl/generate_mosaics.py:67: PerformanceWarning: 
+your performance may suffer as PyTables will pickle object types that it cannot
+map directly to c-types [inferred_type->mixed,key->block2_values] [items->Index(['file_name', 'slide_path', 'features'], dtype='object')]
+
+  features_df.to_hdf(join(save_dir, "features_with_cluster.h5"), key="df", mode="w")
