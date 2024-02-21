@@ -1,0 +1,8 @@
+Namespace(WSI_DIR='/raid/nejm_ai/TEST_DATA', SLIDE_EXT='svs', RESULT_DIR='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/TEST_DATA', TMP='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/TEST_DATA/TEMP', DENSE=True, SAVE_ALL=True)
+Image too large
+failing in UCLA/slide2 image, continue
+Image too large
+failing in UCLA/slide3 image, continue
+Tensors must have same number of dimensions: got 2 and 1
+failing in GBM_MICROSCOPE_CPTAC/C3N-02186-22 image, continue
+Job done successfully!

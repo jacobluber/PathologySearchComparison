@@ -1,0 +1,8 @@
+Starting create_patches_fp.py at 2024-01-19 18:55:37
+Namespace(WSI_DIR='/home/data/nejm_ai/TEST_DATA/WSI/', SLIDE_EXT='svs', RESULT_DIR='/home/mxn2498/projects/new_search_comp/hshr/TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1', TMP='/home/mxn2498/projects/new_search_comp/hshr/TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/TEMP', DENSE=True, SAVE_ALL=True)
+create_patches_fp.py finished at 2024-01-19 19:56:32
+Duration: 01:00:55
+--------------------------------
+Overall start time: 2024-01-19 19:56:32
+Overall end time: 2024-01-19 19:56:32
+Duration: 01:00:55

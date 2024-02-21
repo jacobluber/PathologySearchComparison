@@ -6,6 +6,8 @@ This pipeline is comprised of three main steps:
 
 To reproduce our results, you can follow the guidelines presented here. Also, please feel free to use our pipeline to test these models on you custom database and test datasets.
 
+Throughout this repository, you will often find folders with `.gitignore` inside them. These folders are just placeholders to demonstrate how the directory often looks like after you run the model. Due to the large size of these compiled data, it was not possible to include them in this repository. However, they are available upon reasonable request.
+
 ## Setting Up the Conda Environment:
 We recommend having [Mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) installed. You can run the following command to install all the dependencies:
 ```bash

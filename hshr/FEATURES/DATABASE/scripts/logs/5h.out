@@ -1,0 +1,8 @@
+Namespace(WSI_DIR='/raid/nejm_ai/DATABASE/lung', SLIDE_EXT='svs', RESULT_DIR='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/lung', TMP='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/TEMP', DENSE=True, SAVE_ALL=True)
+Tensors must have same number of dimensions: got 2 and 1
+failing in LUSC/TCGA-94-7033-01A-01-TS1.d38f20aa-3a65-4af3-a58d-5837a5a4a631 image, continue
+
+failing in LUAD/TCGA-05-4390-01Z-00-DX1.858E64DF-DD3E-4F43-B7C1-CE35B33F1C90 image, continue
+
+failing in LUAD/TCGA-05-5428-01Z-00-DX1.8018AD62-F1CE-4BFF-8EFD-3F2D4513FC11 image, continue
+Job done successfully!

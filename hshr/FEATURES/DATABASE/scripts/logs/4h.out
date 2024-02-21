@@ -1,0 +1,4 @@
+Namespace(WSI_DIR='/raid/nejm_ai/DATABASE/liver', SLIDE_EXT='svs', RESULT_DIR='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/liver', TMP='/home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/TEMP', DENSE=True, SAVE_ALL=True)
+Tensors must have same number of dimensions: got 2 and 1
+failing in CHOL/TCGA-W5-AA2G-01Z-00-DX1.DA30CC19-6DDF-4A23-8FC6-D800155FAAC5 image, continue
+Job done successfully!

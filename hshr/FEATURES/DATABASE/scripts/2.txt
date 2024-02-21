@@ -1,0 +1,2 @@
+# Update and move CONST.py to root before running.
+python ssl_encoder_training.py --RESULT_DIR /home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE --TMP /home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/TEMP --MODEL_DIR /home/mxn2498/projects/new_search_comp/hshr/FEATURES/DATABASE/model --DATASETS brain breast colon liver lung
