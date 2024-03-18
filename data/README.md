@@ -22,8 +22,8 @@ DATA
 ```
 
 ## Test Datasets
-In this study, we have used 6 different datasets for different studies. Except for the in-house data (UCLA) that can be downloaded from this repository (accessible at `PathologySearchComparison/DATA/TEST_DATA/UCLA`), all other datasets can be downloaded from Cancer Imaging Archive.
-1. Three in-house slides (UCLA)
+In this study, we have used 6 different datasets for different studies. Except for the in-house data (UCLA) that can be downloaded from Zenodo repository, all other datasets can be downloaded from Cancer Imaging Archive.
+1. [Three in-house slides (UCLA)](https://zenodo.org/records/10835156)
 2. [CMB-CRC](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93257955)
 3. [CMB-LCA](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=93258420)
 4. [Yale HER2 and Trastuzumab](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702524)
