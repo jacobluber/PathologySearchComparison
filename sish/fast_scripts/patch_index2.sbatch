@@ -24,4 +24,4 @@ conda activate search1 || fail "conda activate fail"
 
 cd /home/mxn2498/projects/search_comparision/sish_new_test
 
-python build_index_patch2.py --exp_name READER_STUDY --patch_label_file DATA_PATCH/summary.csv --patch_data_path DATA_PATCH/All || fail "python fail"
+python build_index_patch.py --exp_name READER_STUDY --patch_label_file DATA_PATCH/summary.csv --patch_data_path DATA_PATCH/All || fail "python fail"

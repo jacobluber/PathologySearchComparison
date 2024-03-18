@@ -15,7 +15,7 @@ mamba/conda env create -f search.yml
 ```
 
 ## Downloading Data
-We have provided dtailed guidelines on how to download the TCGA slides we used as a common database, and test slides we used for different studies in the `data` subdirectory of this repository. Please refer to `data/README.md` for detailed explanation.
+We have provided dtailed guidelines on how to download the TCGA slides we used as a common database, and test slides we used for different studies in the `data_preparation` subdirectory of this repository. Please refer to `data_preparation/README.md` for detailed explanation.
 
 ## Running the Models
 For each of the four methods we compared in this study, we have provided the source code we used to generate the results in this repository in the following subdirectories:
