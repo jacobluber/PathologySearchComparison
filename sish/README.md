@@ -58,7 +58,24 @@ And to build the index for sub-type retrieval task, for each diagnosis, you have
 ```bash
 python build_index.py --site brain --mosaic_path ./FEATURES/DATABASE/MOSAICS/ --slide_path PathologySearchComparison/DATA/DATABASE --slide_ext .svs --checkpoint ./checkpoints/model_9.pt --codebook_semantic ./checkpoints/codebook_semantic.pt
 ```
-And for the patch retrieval (for Reader study), you can run the following code. You need to use the `.csv` file located in `./FEATURES/PATCH_DATABASE`. Please be advised that the majority of these source codes have some modification compared to the original code published by their respective authors.
+
+## Test Data Featrue Extraction
+Here, we would essentially follow the same procedure as above to patch and extract the features from test slides. First, we need to chage the format of directory for each test set. For the sake of simplicity, we can just duplicate the name of the dataset instead of having `SITE\DIAGNOSIS`. For examle, for the Yale HER2 experiment, these are the commands that need be run:
+```bash
+python create_patches_fp.py --source PathologySearchComparison/DATA/TEST_DATA/BRCA_TRASTUZUMAB/BRCA_TRASTUZUMAB/20x/ --step_size 1024 --patch_size 1024 --seg --patch --stitch --patch_level 0 --save_dir ./TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/PATCHES/BRCA_TRASTUZUMAB/BRCA_TRASTUZUMAB/20x --preset BRCA_TRASTUZUMAB.csv
+python extract_mosaic.py --slide_data_path PathologySearchComparison/DATA/TEST_DATA/BRCA_TRASTUZUMAB/BRCA_TRASTUZUMAB/20x/  --slide_patch_path ./TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/PATCHES/BRCA_TRASTUZUMAB/BRCA_TRASTUZUMAB/20x/patches/ --save_path ./TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/MOSAICS/BRCA_TRASTUZUMAB/BRCA_TRASTUZUMAB/20x/
+python artifacts_removal.py --site_slide_path PathologySearchComparison/DATA/TEST_DATA/BRCA_TRASTUZUMAB/  --site_mosaic_path  ./TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/MOSAICS/BRCA_TRASTUZUMAB
+python build_index.py --slide_path PathologySearchComparison/DATA/TEST_DATA/ --mosaic_path ./TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/temp1/MOSAICS/ --site BRCA_TRASTUZUMAB --slide_ext svs
+```
+It worths mentioning the `slide2.svs` from the UCLA study was very large for this code to handle. We made some changes to the source code to divide it into 4 section, patch them individually, and then add all regions together. The first part is done automatically in the source code, but for adding everything together, you can use the `test_post_process.ipynb` notebook.
+
+Except for the Reader study, other experiments do not study patch level retrieval. And for the patch retrieval (for Reader study), you can run the following code. You need to use the `summary.csv` file located in `./FEATURES/PATCH_DATABASE`. Please be advised that the majority of these source codes have some modification compared to the original code published by their respective authors.
 ```bash
 python build_index_patch.py --exp_name READER_STUDY --patch_label_file ./FEATURES/PATCH_DATABASE/summary.csv --patch_data_path ./FEATURES/PATCH_DATABASE/ALL
 ```
+
+## Searching the Database for Test Slides
+Once you extract the features as outlined above, you can use the `search_template.ipynb` notebook located at `TEST_DATA_RESULTS` to carry out the search and store the performance metrics. For our experiments, we have provided the notebook we have used to store the data in each corresponding subdirectory (e.g. `TEST_DATA_RESULTS/ABLATION_BRCA_HER2/search.ipynb`).
+
+## Runtime Analysis
+We have also provided the code we have used to evaluate the runtime of the model for the Yale Trastuzumab study under `TEST_DATA_RESULTS/TIME_BRCA_TRASTUZUMAB/` directory. In the `scripts` directory, you can find the logs for patching and feature extraction, and in the accompanied notebook, you can find the search and retrieval runtimes.
